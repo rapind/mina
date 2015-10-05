@@ -25,18 +25,18 @@ print_completion = (name)->
 
 print_usage = ->
   commands =
-    deploy: "Deploy using the given config file or $MINA_CONFIG or deploy.json"
+    deploy: "Deploy using the given config file or $MINJA_CONFIG or deploy.json"
     init  : "Write an example config file"
     help  : "That's me"
 
-  console.log "Usage: mina [command] [config file]\n"
+  console.log "Usage: minja [command] [config file]\n"
   console.log (clc.yellow "Commands:")
   for cmd, desc of commands
     console.log "#{cmd}:\t#{desc}"
 
 do_deploy = (config_path) ->
   # Which config file do we use?
-  config_path ?= process.env["MINA_CONFIG"] ? "deploy.json"
+  config_path ?= process.env["MINJA_CONFIG"] ? "deploy.json"
   if not fs.existsSync config_path
     log_err "Config file '#{config_path}' not found"
     process.exit 1

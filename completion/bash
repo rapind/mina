@@ -1,4 +1,4 @@
-_mina()
+_minja()
 {
   local cur=${COMP_WORDS[COMP_CWORD]}
   local prev=${COMP_WORDS[COMP_CWORD-1]}
@@ -10,4 +10,4 @@ _mina()
 
   COMPREPLY=($(compgen -W "init deploy help" -- $cur))
 }
-complete -F _mina mina
+complete -F _minja minja

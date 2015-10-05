@@ -1,9 +1,9 @@
 {
-  "name": "mina",
-  "version": "1.0.9",
-  "description": "Lightweight deployer for node development, inspired by mina and minco",
-  "homepage": "https://github.com/CenturyUna/mina",
-  "bugs": "https://github.com/CenturyUna/mina/issues",
+  "name": "minja",
+  "version": "1.0.10",
+  "description": "Lightweight deployer for node development, inspired by mina and minco. Forked from mina js.",
+  "homepage": "https://github.com/rapind/minja",
+  "bugs": "https://github.com/rapind/minja/issues",
   "dependencies": {
     "cli-color": "~0.3.2",
     "nopt": "~3.0.0"
@@ -13,7 +13,7 @@
   },
   "files": ["bin","completion","lib"],
   "bin": {
-    "mina": "./bin/mina-cli"
+    "minja": "./bin/minja-cli"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -21,13 +21,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CenturyUna/mina"
+    "url": "https://github.com/rapind/minja"
   },
   "keywords": [
     "deploy",
     "deployment",
     "coffeescript",
     "mina",
+    "minja",
     "minco",
     "git",
     "ssh",

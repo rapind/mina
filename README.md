@@ -1,25 +1,25 @@
-# Mina [![NPM version](https://badge.fury.io/js/mina.png)](http://badge.fury.io/js/mina) [![bitHound Score](https://www.bithound.io/CenturyUna/mina/badges/score.svg)](https://www.bithound.io/CenturyUna/mina) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/CenturyUna/mina?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# Minja [![NPM version](https://badge.fury.io/js/mina.png)](http://badge.fury.io/js/mina) [![bitHound Score](https://www.bithound.io/CenturyUna/mina/badges/score.svg)](https://www.bithound.io/CenturyUna/mina) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/CenturyUna/mina?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 [![NPM](https://nodei.co/npm/mina.png?downloads=true)](https://nodei.co/npm/mina/)
 
 A simple deploy tool inspired by [mina](http://nadarei.co/mina), based on [minco](https://github.com/dsmatter/minco). This project is powered by [node](http://nodejs.org), forcus on quick and lightweight deployment and server automation over ssh for [node](http://nodejs.org) projects.
 
 ## Latest Version
-[v1.0.9](https://npmjs.org/package/mina)
+[v1.0.9](https://npmjs.org/package/minja)
 
 ## Installation
 Make sure you have installed node.js including NPM
 
-    sudo npm install -g mina
+    sudo npm install -g minja
 
 ## Bash completion
 Add this to your .bashrc, In this version only support bash
 
-    eval "$(mina completion=bash)"
+    eval "$(minja completion=bash)"
 
 ## Usage
     # Create an example deploy.json
-    mina init
+    minja init
 
     # Adjust it to your needs in deploy.json
     {
@@ -55,10 +55,10 @@ Add this to your .bashrc, In this version only support bash
     }
 
     # Deploy
-    mina deploy
+    minja deploy
 
     # Or, indicate deploy config file
-    MINA_CONFIG=deploy_scripts/to_dev.json mina deploy
+    MINJA_CONFIG=deploy_scripts/to_dev.json minja deploy
 
 ## Keep in mind...
 
